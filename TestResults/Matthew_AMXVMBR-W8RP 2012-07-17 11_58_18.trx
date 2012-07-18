@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8b635a95-2390-499e-96b3-6a91077809f9" name="Matthew@AMXVMBR-W8RP 2012-07-17 11:58:18" runUser="AMXVMBR-W8RP\Matthew" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="fe7f11bb-f5c7-4931-a4d0-d745c2cb3bf0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Matthew_AMXVMBR-W8RP 2012-07-17 11_58_18">
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\packages\EntityFramework.5.0.0-rc\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends.Web\bin\Br.MetroStyleFriends.Web.dll" />
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\packages\Microsoft.AspNet.Providers.Core.1.0\lib\net40\System.Web.Providers.dll" />
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\11.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-17T11:58:18.8926894+01:00" queuing="2012-07-17T11:58:18.9556846+01:00" start="2012-07-17T11:58:18.9877181+01:00" finish="2012-07-17T11:58:41.1220881+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSubscribeUser" storage="c:\code\br.metrostylefriends\br.metrostylefriends.tests\bin\debug\br.metrostylefriends.tests.dll" id="9fc98ce0-7a36-711d-212f-91c69205b27f">
+      <Execution id="a5fe4659-29d9-4b42-b76c-c898d49f72d3" />
+      <TestMethod codeBase="c:/code/Br.MetroStyleFriends/Br.MetroStyleFriends.Tests/bin/Debug/Br.MetroStyleFriends.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Br.MetroStyleFriends.Tests.SubscriptionsTest, Br.MetroStyleFriends.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSubscribeUser" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9fc98ce0-7a36-711d-212f-91c69205b27f" executionId="a5fe4659-29d9-4b42-b76c-c898d49f72d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a5fe4659-29d9-4b42-b76c-c898d49f72d3" testId="9fc98ce0-7a36-711d-212f-91c69205b27f" testName="TestSubscribeUser" computerName="AMXVMBR-W8RP" duration="00:00:21.8822218" startTime="2012-07-17T11:58:18.9936894+01:00" endTime="2012-07-17T11:58:41.0820742+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5fe4659-29d9-4b42-b76c-c898d49f72d3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Br.MetroStyleFriends.Tests.SubscriptionsTest.TestSubscribeUser threw exception: 
+System.Net.Mail.SmtpException: Failure sending mail. ---&gt; System.Net.WebException: Unable to connect to the remote server ---&gt; System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 91.204.208.102:25</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)
+ --- End of inner exception stack trace ---
+    at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress&amp; address, Socket&amp; abortSocket, Socket&amp; abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+ --- End of inner exception stack trace ---
+    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Br.MetroStyleFriends.List.SubscribeUser(MembershipUser user) in c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\Entities\List.cs:line 74
+   at Br.MetroStyleFriends.Tests.SubscriptionsTest.TestSubscribeUser() in c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends.Tests\Tests\SubscriptionsTest.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

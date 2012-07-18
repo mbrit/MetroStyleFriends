@@ -1,0 +1,21 @@
+﻿fieldset
+{
+    
+}
+
+fieldset ol
+{
+    margin:0;
+    padding:0
+}
+
+fieldset li
+{
+    list-style:none;
+}
+
+#subscriptionslist div
+{
+    padding-top:3px;
+    padding-bottom:10px;
+}

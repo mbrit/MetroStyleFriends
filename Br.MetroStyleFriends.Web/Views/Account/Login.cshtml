@@ -1,0 +1,34 @@
+﻿@model Br.MetroStyleFriends.Web.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.ValidationSummary(true, "Log in was unsuccessful. Please correct the errors and try again.")
+
+    <fieldset>
+        <ol>
+            <li>
+                <label>Username</label>
+                @Html.TextBoxFor(m => m.UserName)
+            </li>
+            <li>
+                <label>Password</label>
+                @Html.PasswordFor(m => m.Password)
+            </li>
+            <li>
+                <label>Remember me</label>
+                @Html.CheckBoxFor(m => m.RememberMe)
+            </li>
+            <li>
+                <input type="submit" value="Login" class="btn" />
+            </li>
+        </ol>
+    </fieldset>
+}
+
+@section Scripts {
+}

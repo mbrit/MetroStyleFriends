@@ -1,0 +1,8 @@
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\11.dll.config
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\11.dll
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\11.pdb
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\EntityFramework.dll
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\EntityFramework.xml
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\obj\Debug\11.dll
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\obj\Debug\11.pdb
+c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\obj\Debug\Br.MetroStyleFriends.csprojResolveAssemblyReference.cache

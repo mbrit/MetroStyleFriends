@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6a48301c-e554-4b76-95bd-2ad1d0cd9efe" name="Matthew@AMXVMBR-W8RP 2012-07-17 10:50:46" runUser="AMXVMBR-W8RP\Matthew" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="fe7f11bb-f5c7-4931-a4d0-d745c2cb3bf0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Matthew_AMXVMBR-W8RP 2012-07-17 10_50_46">
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\packages\EntityFramework.5.0.0-rc\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends.Web\bin\Br.MetroStyleFriends.Web.dll" />
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\packages\Microsoft.AspNet.Providers.Core.1.0\lib\net40\System.Web.Providers.dll" />
+      <DeploymentItem filename="c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\bin\Debug\11.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-17T10:50:46.0335246+01:00" queuing="2012-07-17T10:50:46.0995138+01:00" start="2012-07-17T10:50:46.1105083+01:00" finish="2012-07-17T10:50:47.0416033+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCreateList" storage="c:\code\br.metrostylefriends\br.metrostylefriends.tests\bin\debug\br.metrostylefriends.tests.dll" id="551099d1-db7d-f4cc-c731-de6eb49c6ebc">
+      <Execution id="bc82121a-c484-4d0e-b433-1e6f9a2ad8b2" />
+      <TestMethod codeBase="c:/code/Br.MetroStyleFriends/Br.MetroStyleFriends.Tests/bin/Debug/Br.MetroStyleFriends.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Br.MetroStyleFriends.ListTests, Br.MetroStyleFriends.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreateList" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="551099d1-db7d-f4cc-c731-de6eb49c6ebc" executionId="bc82121a-c484-4d0e-b433-1e6f9a2ad8b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bc82121a-c484-4d0e-b433-1e6f9a2ad8b2" testId="551099d1-db7d-f4cc-c731-de6eb49c6ebc" testName="TestCreateList" computerName="AMXVMBR-W8RP" duration="00:00:00.6610371" startTime="2012-07-17T10:50:46.1475268+01:00" endTime="2012-07-17T10:50:47.0096648+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc82121a-c484-4d0e-b433-1e6f9a2ad8b2">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Br.MetroStyleFriends.ListTests.TestCreateList threw exception: 
+System.InvalidOperationException: The cast to value type 'Int32' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type.</Message>
+          <StackTrace>    at System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.&lt;GetElementFunction&gt;b__3[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Max[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at Br.MetroStyleFriends.List.GetNextOrdinal() in c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\Entities\List.cs:line 53
+   at Br.MetroStyleFriends.List.CreateList(String name, String description, Boolean isMandatory) in c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends\Entities\List.cs:line 29
+   at Br.MetroStyleFriends.ListTests.TestCreateList() in c:\code\Br.MetroStyleFriends\Br.MetroStyleFriends.Tests\ListTests.cs:line 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

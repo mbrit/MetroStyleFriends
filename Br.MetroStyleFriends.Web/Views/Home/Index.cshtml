@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (Request.IsAuthenticated) {
+    <h2>The Lists</h2>
+    <fieldset>
+        <ol data-bind="foreach:lists" id="subscriptionslist">
+            <li><input type="button" class="btn" data-bind="value:Name,attr:{'data-id':ListId,'data-name':Name}" />
+                <div data-bind="text:Description"></div></li>
+        </ol>
+    </fieldset>
+}
+
+@section scripts {
+    <script src="Scripts/Pages/Index.js" type="text/javascript"></script>
+}

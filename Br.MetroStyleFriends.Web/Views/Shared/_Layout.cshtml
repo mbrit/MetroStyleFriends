@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Metro-style Friends</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/themes/base/css", "~/Content/css")
+        
+        <style type="text/css">
+          body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+          }
+        </style>
+
+    </head>
+    <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="~/">Metro-style Friends</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="~/">Home</a></li>
+              <li><a href="~/Home/Contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Metro-style Friends</h1>
+        <p>Deep-dive discussion lists on Metro-style app development.<br />Where Stack Overflow troubleshoots, we discuss.</p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+
+          <h2>Hello!</h2>
+            <section id="login">
+                @Html.Partial("_LoginPartial")
+            </section>
+        </div>
+
+        <div class="span8">
+            @RenderBody()
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Copyright &copy; AMX Software Ltd 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/knockout")
+        @Scripts.Render("~/bundles/site")
+        @RenderSection("scripts", required: false)
+
+        <script type="text/javascript">
+            Cufon.replace("h1,h2,.brand");
+        </script>
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-9385403-24']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+    </body>
+</html>

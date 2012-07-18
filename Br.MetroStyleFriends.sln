@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Br.MetroStyleFriends", "Br.MetroStyleFriends\Br.MetroStyleFriends.csproj", "{C4CC0C2C-2F35-438E-89BD-792E43200694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Br.MetroStyleFriends.Web", "Br.MetroStyleFriends.Web\Br.MetroStyleFriends.Web.csproj", "{36BA4FF3-D1A2-4559-BB02-91CCC8341BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Br.MetroStyleFriends.Tests", "Br.MetroStyleFriends.Tests\Br.MetroStyleFriends.Tests.csproj", "{2B99951C-91AE-46C4-92FE-4CB0687C517B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08FEA0E5-94BC-4DC8-9E1E-172332F2403B}"
+	ProjectSection(SolutionItems) = preProject
+		Br.MetroStyleFriends.vsmdi = Br.MetroStyleFriends.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Br.MetroStyleFriends.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4CC0C2C-2F35-438E-89BD-792E43200694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CC0C2C-2F35-438E-89BD-792E43200694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CC0C2C-2F35-438E-89BD-792E43200694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CC0C2C-2F35-438E-89BD-792E43200694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36BA4FF3-D1A2-4559-BB02-91CCC8341BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BA4FF3-D1A2-4559-BB02-91CCC8341BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BA4FF3-D1A2-4559-BB02-91CCC8341BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BA4FF3-D1A2-4559-BB02-91CCC8341BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B99951C-91AE-46C4-92FE-4CB0687C517B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B99951C-91AE-46C4-92FE-4CB0687C517B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B99951C-91AE-46C4-92FE-4CB0687C517B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B99951C-91AE-46C4-92FE-4CB0687C517B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
