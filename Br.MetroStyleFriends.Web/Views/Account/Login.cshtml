@@ -1,13 +1,9 @@
 ﻿@model Br.MetroStyleFriends.Web.Models.LoginModel
 
-@{
-    ViewBag.Title = "Log in";
-}
-
 <h2>Login</h2>
 
 @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
-    @Html.ValidationSummary(true, "Log in was unsuccessful. Please correct the errors and try again.")
+    @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
 
     <fieldset>
         <ol>
