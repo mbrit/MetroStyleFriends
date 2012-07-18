@@ -26,8 +26,6 @@ namespace Br.MetroStyleFriends.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            SqlServices.Install("DefaultConnection", SqlFeatures.All, "Data Source=.;Initial Catalog=project-br.metrostylefriends;uid=sa;pwd=w1bbl3");
         }
     }
 }

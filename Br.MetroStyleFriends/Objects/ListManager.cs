@@ -15,7 +15,7 @@ namespace Br.MetroStyleFriends
             var message = new MailMessage();
             message.From = new MailAddress(user.Email);
             message.To.Add(new MailAddress(Settings.ListservTo));
-            message.Body = string.Format("subscribe {0}", list.Name);
+            message.Body = string.Format("{0} {1}", command, list.Name);
 
             // go...
             var client = new SmtpClient("mail.metrostylefriends.com");
